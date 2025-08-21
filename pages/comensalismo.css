@@ -1,0 +1,50 @@
+
+header {
+    height: 12.2rem;
+    display: flex;
+    align-items: center;
+    gap: 4.3rem;
+    background: var(--cal-poly-green);
+    width: 100%;
+
+
+    ul{
+        display: flex;
+        gap: 3rem;
+        padding-bottom: 0.5rem;
+    }
+
+     li {
+        list-style: none;
+    }
+
+    a {
+        display: flex;
+        font-family: "Inter", serif;
+        color: var(--bone);
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin-left: 1rem;
+    }
+
+
+    a.active {
+        text-decoration: underline;
+    }
+
+    .logo {
+        justify-content: space-between;
+        display: flex;
+        width: 12.5rem;
+        margin-right: 45rem;
+        margin-left: 5rem;
+        padding-bottom: 0.9rem;
+    }
+
+    nav li:hover {
+        transform: scale(1.1);
+        transition: .4s;
+    }
+
+}

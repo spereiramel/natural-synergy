@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gfs neohellenic", serif;
+    font-family: "Inter", serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Libre Baskerville", serif;
+}
+
+:root {
+    --white: #fff;
+    --bone: #E0D7C4; /*Background das páginas e opções header*/
+    --timberwolf: #CCC7BB; /*Final das páginas com opção de escolha das harmônicas e jogo*/
+    --dim-gray: #716D5E; /*Botão Jogo*/
+    --normal-gray: #BCB59D; /*Botão home*/
+    --field-drab: #5A4A25; 
+    --drab-dark-brown: #483B1E; /*Texto da escolha da categoria (Harmônicas/Desarmônicas) na page Oq são*/
+    --alabaster: #EAE8E1;  /*Botão Quero jogar, seção para escolher próximos tipos de relação*/
+    --seal-brown: #623014; /*Botão Quero jogar, opções desarmônicas, logo insta*/ 
+    --russet: #783B14; /*Bordas das imagens*/
+    --bistre: #282111;    /*Botão jogar novamente, título dos cards da home*/
+    --ash-green: #C8D0C3; /*Botão jogar novamente*/
+    --cal-poly-green: #364B2A; /*Opções harmônicas, cor do header*/
+    --dark-moss-green: #4F6839; /*Botão iniciar*/
+    --hunter-green: #3D5331; /*Bordas da imagem da page oq são*/
+}
+
+header {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    background: var(--cal-poly-green);
+    width: 100%;
+
+
+    ul{
+        display: flex;
+        gap: 2.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+     li {
+        list-style: none;
+    }
+
+    a {
+        display: flex;
+        font-family: "Inter", serif;
+        color: var(--bone);
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+
+
+    a.active {
+        text-decoration: underline;
+    }
+
+    .logo {
+        justify-content: space-between;
+        display: flex;
+        width: 12.5rem;
+        margin-right: 52.8rem;
+        margin-left: 4.3rem;
+        padding-bottom: 0.9rem;
+        margin-top: 0.65rem;
+    }
+
+    nav li:hover {
+        transform: scale(1.1);
+        transition: .4s;
+    }
+
+}
+
+body {
+    background: var(--bone);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "playfair display", serif;
+    padding-left: 19rem;
+    padding-top: 3rem;
+}
+
+.conteudo {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 60rem;
+    margin-left: 30rem;
+
+    hr{
+        border: none;
+        border-top: 1px solid #96917E;
+        padding-bottom: 1rem;
+        padding-right: 50rem;
+        margin-left: 3rem;
+        margin-top: -3.5rem;
+    }
+
+    .descricao{
+        text-align: justify;
+        font-family: "gfs neohellenic", serif;
+        font-size: 2rem;
+    }
+}
+
+.escolha-titulo{
+    color: var(--cal-poly-green);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "gfs neohellenic", serif;
+    margin-left: -3rem;
+}
+
+.cards {
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 4rem;
+
+    img{
+        width: 12rem;
+        margin-left: -3rem;
+    }
+  }
