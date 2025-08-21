@@ -98,9 +98,8 @@ body {
   hr{
     border: none;
     border-top: 1px solid #96917E;
-    margin-bottom: 2rem;
     padding-left: 85rem;
-    margin-top: rem;
+    margin-top: 1rem;
     margin-left: 18rem;    
     margin-right: 25rem;
   }
@@ -121,8 +120,8 @@ body {
     width: 50%;
     font-size: 1.6rem;
     line-height: 1.8;
-    padding-left: 8rem;
-    padding-top: rem;
+    padding-left: 15rem;
+    margin-top: -3rem;
     
     p{
       text-align: justify;
@@ -134,7 +133,7 @@ body {
   
   .sobre-img img {
     border-radius: .8rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
     width: 30rem;
     margin-right: 8rem;
   }
