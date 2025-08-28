@@ -166,12 +166,14 @@ body{
   .cards {
     display: flex;
     justify-content: center;
-    margin-bottom: 3.5rem;
     flex-wrap: wrap;
     display: flex;
     gap: 8rem;
-    margin-left: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     background: var(--alabaster);
+    max-width: 100%;
 
     .img{
         width: 12rem;
