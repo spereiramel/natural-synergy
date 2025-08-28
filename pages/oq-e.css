@@ -172,7 +172,7 @@ h1 {
     border-radius: 3.1rem;
     font-weight: 700;
 
-    .desarmonicas:hover {
+    .desarmonicas:hover{
         transform: scale(1.1);
         transition: .4s;
     }
