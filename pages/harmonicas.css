@@ -129,8 +129,15 @@ h1{
     gap: 8rem;
     margin-bottom: 4rem;
 
-    img{
+    .img{
         width: 12rem;
         margin-left: -3rem;
-    }
+        border: none;    
+        transition: transform 0.3s ease;
   }
+} 
+
+.img:hover {
+    transform: scale(1.1);
+    transition: .4s;        
+}

@@ -16,7 +16,7 @@
     --normal-gray: #BCB59D; /*Botão home*/
     --field-drab: #5A4A25; 
     --drab-dark-brown: #483B1E; /*Texto da escolha da categoria (Harmônicas/Desarmônicas) na page Oq são*/
-    --alabaster: #EAE8E1;  /*Botão Quero jogar, seção para escolher próximos tipos de relação*/
+    --alabaster: #EAE8E1;  /*Fundo dos textos em Sobre Nós, Botão Quero jogar, seção para escolher próximos tipos de relação*/ 
     --seal-brown: #623014; /*Botão Quero jogar, opções desarmônicas, logo insta*/ 
     --russet: #783B14; /*Bordas das imagens*/
     --bistre: #282111;    /*Botão jogar novamente, título dos cards da home*/
@@ -92,7 +92,8 @@ body {
     text-align: center;
     color: #1a1a1a;
     font-family: 'playfair display', serif;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 2.3rem;
   }
 
   hr{
@@ -102,9 +103,10 @@ body {
     margin-top: 1rem;
     margin-left: 18rem;    
     margin-right: 25rem;
+    padding-bottom: 2rem;
   }
 
-  .container {
+  .container1 {
     font-family: 'gfs neohellenic', serif;
   }
   
@@ -120,14 +122,15 @@ body {
     width: 50%;
     font-size: 1.6rem;
     line-height: 1.8;
-    padding-left: 15rem;
+    padding-left: 20rem;
     margin-top: -3rem;
     
     p{
       text-align: justify;
-      width: 30rem;
+      width: 25rem;
       font-family: "gfs neohellenic", serif;
       font-weight: 500;
+      color: #2B1509;
     }
   }
   
@@ -135,7 +138,7 @@ body {
     border-radius: .8rem;
     margin-top: 2rem;
     width: 30rem;
-    margin-right: 8rem;
+    margin-right: 20rem;
   }
   
   .citacao {
@@ -143,51 +146,114 @@ body {
     background: #3d5a3a;
     color: #f4f4f4;
     font-style: italic;
-    font-size: 20px;
     text-align: center;
     padding: 3rem;
     width: 100%;
+    margin-bottom: 5rem;
+
+    p{
+      font-size: 2rem;
+      text-align: justify;
+      width: 35.5rem;
+      margin-left: 40rem;
+      font-weight: 600;
+      font-family: 'gfs neohellenic', serif;
+    }
   }
-  
-  .time {
+
+  .container{
+    display: flex;
+    margin-left: 20rem;
+    gap: 40rem;
+  }
+
+  .container .card .face.face1 {
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    transition: .5s;
   }
+    .container .card:hover .face.face1 {
+    transform: translateY(0px) ;    
+    transition: .4s;
+    }
+
+    .container .card .face.face1 .content img {
+    max-width: 100rem;
+}
+    .container .card .face.face2 {
+    border-radius: 1.2rem;
+    width: 20rem;
+    position: relative;
+    background: var(--alabaster);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px var(--bistre);
+    transform: translateY(-100px) ;
+    }
+    .container .card:hover .face.face2 {
+    transform: translateY(0);
+    transition: .4s;
+    }
   
-  .card {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+    .icon img {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border: 9px solid var(--russet);
+    }
   
-  .card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 8px solid #5c2e00;
-  }
-  
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
   .nome {
-    margin-top: 15px;
-    font-size: 0.8rem;
+    font-family: 'gfs neohellenic', serif;
+    font-size: 1rem;
+    font-weight: 400;
   }
   
   .funcao {
+    font-family: 'gfs neohellenic', serif;
     color: #666;
-    font-size: 14px;
+    font-size: .9rem;
+    font-weight: 400;
   }
   
   .frase {
+    font-family: 'gfs neohellenic', serif;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 0.98rem;
   }
   
   .insta img {
     border: none;
+    width: 2rem;
+    height: auto;
+    margin-top: 0.6rem;
   }
+
+  .seta{
+    margin-bottom: 1rem;
+    width: 4.8rem;
+    border: none;
+    margin-left: 54.8rem;
+    transition: transform 0.3s ease;
+    
+    .seta:hover {
+        transform: scale(1.1);
+        transition: .4s;
+        cursor: pointer; /* muda o cursor pra indicar que é clicável */
+    }
+}

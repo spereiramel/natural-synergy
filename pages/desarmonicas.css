@@ -133,8 +133,13 @@ h1{
     gap: 7rem;
     margin-bottom: 5.7rem;
 
-    img{
+    .img{
         width: 12rem;
         margin-left: -1.5rem;
     }
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition: .4s;        
 }

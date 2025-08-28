@@ -235,12 +235,17 @@ main a:hover {
     p{
         color: var(--bistre);
         font-size: 3rem;
-        text-align: justify;
+        text-align: left;
         width: 30rem;
         padding-top: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+.card1:hover{
+    transform: translate(2rem);
+    transition: .5s;
 }
 
 .card2{
@@ -271,6 +276,11 @@ main a:hover {
     }
 }
 
+.card2:hover{
+    transform: translate(2rem);
+    transition: .5s;
+}
+
 .card3{
     box-shadow: 0 4px 10px var(--bistre);
     background: var(--pearl);
@@ -285,8 +295,8 @@ main a:hover {
     .jogueEAprenda {
         font-weight: bold;
         color: var(--bistre);
-        font-size: 3.5rem;  
-        text-align: left;
+        font-size: 3.4rem;  
+        text-align:left;
     }
 
     p{
@@ -298,4 +308,9 @@ main a:hover {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+.card3:hover{
+    transform: translate(2rem);
+    transition: .5s;
 }
