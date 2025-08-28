@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo - Natural Synergy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d9d1bc; /* bege do fundo */
+      color: #2f3e25; /* verde escuro */
+    }
+
+    /* Header */
+    header {
+      background-color: #3d4f33; /* verde musgo */
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Texto introdutório */
+    .intro {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 30px 0;
+    }
+
+    /* Área do quebra-cabeça */
+    .puzzle-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .puzzle-board {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      border: 8px solid #3d4f33;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Bombus_terrestris_q_1.jpg");
+      background-size: cover;
+      margin-bottom: 10px;
+    }
+
+    /* Link para trocar imagem */
+    .change-img {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #6d4c41;
+      text-decoration: none;
+    }
+
+    .change-img:hover {
+      text-decoration: underline;
+    }
+
+    /* Peças disponíveis */
+    .pieces {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .piece {
+      width: 70px;
+      height: 70px;
+      border: 2px dashed #444;
+      background-color: #fff;
+      cursor: grab;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>🐾</span>
+      <span>Natural Synergy</span>
+    </div>
+    <nav>
+      <a href="#">O que é</a>
+      <a href="#">Harmônicas</a>
+      <a href="#">Desarmônicas</a>
+      <a href="#">Jogo</a>
+      <a href="#">Sobre nós</a>
+    </nav>
+  </header>
+
+  <!-- Texto -->
+  <div class="intro">
+    <p>Comece agora: arraste uma peça e encontre onde ela encaixa!</p>
+  </div>
+
+  <!-- Quebra-cabeça -->
+  <div class="puzzle-container">
+    <div class="puzzle-board" id="board"></div>
+    <a href="#" class="change-img">Escolher outra imagem</a>
+  </div>
+
+  <!-- Peças -->
+  <div class="pieces">
+    <div class="piece" draggable="true"></div>
+    <div class="piece" draggable="true"></div>
+    <div class="piece" draggable="true"></div>
+    <div class="piece" draggable="true"></div>
+    <div class="piece" draggable="true"></div>
+  </div>
+
+  <script>
+    // Exemplo de drag & drop
+    const pieces = document.querySelectorAll(".piece");
+    const board = document.getElementById("board");
+
+    pieces.forEach(piece => {
+      piece.addEventListener("dragstart", e => {
+        e.dataTransfer.setData("text/plain", "peca");
+      });
+    });
+
+    board.addEventListener("dragover", e => {
+      e.preventDefault();
+    });
+
+    board.addEventListener("drop", e => {
+      e.preventDefault();
+      alert("Peça solta no tabuleiro!");
+    });
+  </script>
+</body>
+</html>
