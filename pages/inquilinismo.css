@@ -75,3 +75,75 @@ header {
     }
 
 }
+
+body{
+    background: var(--bone);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .text {
+    flex: 1;
+    width: 20rem;
+  }
+  
+  .text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .image {
+    flex: 1;
+    min-width: 25rem;
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    border: .9rem solid #2f4f2f;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .video-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .video-section img {
+    width: 30rem;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  .video-section img:hover {
+    transform: scale(1.05);
+  }
