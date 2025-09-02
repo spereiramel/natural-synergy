@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #d9d1bc; /* bege do fundo */
-      color: #2f3e25; /* verde escuro */
+      background-color: #d9d1bc; 
+      color: #2f3e25; 
     }
 
     /* Header */
     header {
-      background-color: #3d4f33; /* verde musgo */
+      background-color: #3d4f33;
       padding: 10px 30px;
       display: flex;
       justify-content: space-between;
@@ -47,7 +47,7 @@
       margin: 30px 0;
     }
 
-    /* Área do quebra-cabeça */
+    /* Parte do quebra-cabeça */
     .puzzle-container {
       display: flex;
       flex-direction: column;
@@ -77,14 +77,14 @@
     }
 
     /* Peças disponíveis */
-    .pieces {
+    .pecas {
       display: flex;
       justify-content: center;
       gap: 10px;
       margin-top: 20px;
     }
 
-    .piece {
+    .pecaqb {
       width: 70px;
       height: 70px;
       border: 2px dashed #444;
@@ -94,7 +94,7 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <div class="logo">
       <span>🐾</span>
@@ -121,20 +121,20 @@
   </div>
 
   <!-- Peças -->
-  <div class="pieces">
-    <div class="piece" draggable="true"></div>
-    <div class="piece" draggable="true"></div>
-    <div class="piece" draggable="true"></div>
-    <div class="piece" draggable="true"></div>
-    <div class="piece" draggable="true"></div>
+  <div class="pecas">
+    <div class="pecaqc" draggable="true"></div>
+    <div class="pecaqb" draggable="true"></div>
+    <div class="pecaqb" draggable="true"></div>
+    <div class="pecaqb" draggable="true"></div>
+    <div class="pecaqb" draggable="true"></div>
   </div>
 
   <script>
     // Exemplo de drag & drop
-    const pieces = document.querySelectorAll(".piece");
+    const pieces = document.querySelectorAll(".pecaqb");
     const board = document.getElementById("board");
 
-    pieces.forEach(piece => {
+    pieces.forEach(pecaqb => {
       piece.addEventListener("dragstart", e => {
         e.dataTransfer.setData("text/plain", "peca");
       });
