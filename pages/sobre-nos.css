@@ -6,6 +6,7 @@
     font-family: "Inter", serif;
     font-family: "Playfair Display", serif;
     font-family: "Libre Baskerville", serif;
+    scroll-behavior: smooth;
 }
 
 :root {

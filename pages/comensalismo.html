@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="oq-e.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comensalismo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,45 +27,99 @@
     <link
         href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="harmonicas.css">
-    <title>Comensalismo - Natural Synergy</title>
-    <link rel="Website icon" type="png" href="./assets/icon.png">
-  </head>
+    <title>Comensalismo- Natural Synergy</title>
+    <link rel="Website icon" type="png" href="../assets/icon.png">
+</head>
+
 <body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img class="logo" src="../assets/logo.png" alt="Logo Natural Synergy">
+            </a>
+        </div>
+
+        <nav id="seta">
+            <ul>
+                <li>
+                    <a href="../pages/oq-e.html">O que é</a>
+                </li>
+
+                <li>
+                    <a class="active" href="../pages/harmonicas.html">Harmônicas</a>
+                </li>
+
+                <li>
+                    <a href="../pages/desarmonicas.html">Desarmônicas</a>
+                </li>
+
+                <li>
+                    <a href="../pages/jogo.html">Jogo</a>
+                </li>
+
+                <li>
+                    <a href="../pages/sobre-nos.html">Sobre nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <div>
-                <a href="../index.html">
-                    <img class="logo" src="../assets/logo.png" alt="Logo Natural Synergy">
+        <div class="container">
+            <h1>Comensalismo</h1>
+            <div class="content">
+                <div class="text">
+                    <p>
+                        O comensalismo é caracterizado por interações entre organismos de espécies distintas, sem que a
+                        espécie que se beneficia, prejudique aquela que a auxilia. Portanto, é benéfica para uma espécie
+                        e absolutamente neutra para outra. A palavra comensal deriva do latim “commensāle”, que
+                        significa “aquele que come junto com”. Tubarão e a rêmora são exemplo de tal relação.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../assets/tuba.png" alt="Rã em uma bromélia">
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h2>Vídeo Aula:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tF3uHS1P81A?si=OogYJnP3WH0-TExI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oQxe2MjgbT4?si=Dsu_DBxTC-mBz5e2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </a>
             </div>
-        
-            <nav id="seta">
-                <ul>
-                    <li>
-                        <a class="active" href="../pages/oq-e.html">O que é</a>
-                    </li>
-        
-                    <li>
-                        <a href="../pages/harmonicas.html">Harmônicas</a>
-                    </li>
-        
-                    <li>
-                        <a href="../pages/desarmonicas.html">Desarmônicas</a>
-                    </li>
-        
-                    <li>
-                        <a href="../pages/jogo.html">Jogo</a>
-                    </li>
-        
-                    <li>
-                        <a href="../pages/sobre-nos.html">Sobre nós</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        </div>
 
-        
+        <a class="seta" href="#seta"><img id="seta" class="seta" src="../assets/seta.png"
+                alt="seta para subir para o topo da página"></a>
+
+        <h2>Escolha o próximo tipo:</h2>
+        <div class="cards">
+            <a class="card2" href="./inquilinismo.html"><img class="img" src="../assets/inquilinismo.png"
+                    alt="Inquilinismo""></a>
+
+    <a class=" card3" href="./mutualismo.css"><img class="img" src="../assets/mutualismo.png" alt="Mutualismo" /></a>
+
+            <a class="card4" href="./protocooperacao.html"><img class="img" src="../assets/protocooperacao.png"
+                    alt="Protocooperação""></a>
+  </div>
+
+    <div class=" actions">
+        <div class="left-action">
+            <span>Ir para <strong>desarmônicas:</strong></span>
+            <a href="./desarmonicas.html"><button class="desarmonicas">Desarmônicas</button></a>
+          </div>
+  
+          <div class="right-action">
+            <span><strong>Testar</strong> seus conhecimentos:</span>
+            <a href="./jogo.html"> <button class="jogar">Jogar</button> </a>
+        </div>
     </main>
 </body>
+
 </html>

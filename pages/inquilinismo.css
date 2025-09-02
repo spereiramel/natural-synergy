@@ -6,6 +6,7 @@
     font-family: "Inter", serif;
     font-family: "Playfair Display", serif;
     font-family: "Libre Baskerville", serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -87,11 +88,13 @@ body{
   }
   
   h1 {
+    font-family: 'playfair display', serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-top: 3rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid #999;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
   }
   
   .content {
@@ -109,7 +112,8 @@ body{
   }
   
   .text p {
-    font-size: 1.1rem;
+    font-family: 'gfs neohellenic', serif;
+    font-size: 1.42rem;
     line-height: 1.6;
     text-align: justify;
     width: 22rem;
@@ -156,12 +160,14 @@ body{
     margin-top: 4rem;
   }
   
-  .next-type h2 {
-    color: #415733;
-    font-size: 1.8em;
+  h2 {
+    color: var(--cal-poly-green);
+    font-size: 2rem;
     margin-bottom: 2.5rem;
     font-family: serif;
-  }
+    text-align: center; 
+    font-weight: 500; 
+}
   
   .cards {
     display: flex;
@@ -180,7 +186,7 @@ body{
         margin-left: -3rem;
         border: none;    
         transition: transform 0.3s ease;
-} 
+}
   }
   
   .card {
@@ -201,6 +207,19 @@ body{
     padding: 4rem;
   }
   
+.card2:hover{
+  transform: translate(2rem);
+  transition: .5s;
+}
+.card3:hover{
+  transform: translate(2rem);
+  transition: .5s;
+}
+.card4:hover{
+  transform: translate(2rem);
+  transition: .5s;
+}
+
   .left-action, .right-action {
     display: flex;
     flex-direction: column;
@@ -249,4 +268,18 @@ body{
 .desarmonicas:hover {
     transform: scale(1.05);
     transition: .6s;
+}
+
+.seta{
+  margin-bottom: 1rem;
+  width: 4.8rem;
+  border: none;
+  margin-left: 54.8rem;
+  transition: transform 0.3s ease;
+  
+  .seta:hover {
+      transform: scale(1.1);
+      transition: .4s;
+      cursor: pointer; /* muda o cursor pra indicar que é clicável */
+  }
 }

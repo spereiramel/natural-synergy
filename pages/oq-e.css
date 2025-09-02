@@ -162,6 +162,10 @@ h1 {
     margin-left: 3rem;
     margin-right: 3rem;
 }
+.CTA .harmonicas:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
 
 .desarmonicas{    
     font-family: "Inter", serif;
@@ -171,11 +175,10 @@ h1 {
     padding: 0.750rem;
     border-radius: 3.1rem;
     font-weight: 700;
-
-    .desarmonicas:hover{
-        transform: scale(1.1);
-        transition: .4s;
-    }
+}
+.CTA .desarmonicas:hover{
+    transform: scale(1.1);
+    transition: .4s;
 }
 
 .texto p{
