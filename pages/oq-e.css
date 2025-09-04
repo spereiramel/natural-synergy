@@ -162,7 +162,7 @@ h1 {
     margin-left: 3rem;
     margin-right: 3rem;
 }
-.CTA .harmonicas:hover{
+.harmonicas:hover{
     transform: scale(1.1);
     transition: .4s;
 }
@@ -176,7 +176,7 @@ h1 {
     border-radius: 3.1rem;
     font-weight: 700;
 }
-.CTA .desarmonicas:hover{
+.desarmonicas:hover{
     transform: scale(1.1);
     transition: .4s;
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="jogo.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +27,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+        
     <title>Jogo - Natural Synergy</title>
     <link rel="Website icon" type="png" href="../assets/icon.png">
 </head>
@@ -80,12 +82,18 @@
     </main>
 
     <!-- Estrutura do Pop-up -->
-  <div id="overlay" class="overlay">
-    <div class="popup">
-      <span class="fechar">&times;</span>
-      <h2>Olá 👋</h2>
-      <p>Este é o conteúdo do pop-up. Você pode fechar clicando no X, no botão ou fora da caixa.</p>
-      <button id="fecharPopup">Fechar</button>
+<!-- Estrutura do Pop-up -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closePopupBtn" class="close">&times;</span>
+      <div class="popup-icon"> <img src="../assets/cérebro.png" alt=""> </div>
+      <h2>Desafie a sua mente!</h2>
+      <p>
+        Mostre o que sabe montando nosso quebra-cabeça interativo com imagens das espécies e suas relações! <br>
+        Você consegue acertar todas?
+      </p>
+      <a href="./escolher-imagem.html"> <button class="cta-button">Quero jogar</button> </a>
+
     </div>
   </div>
   

@@ -79,3 +79,150 @@ header {
 body{
     background: var(--bone);
 }
+
+.game-content {
+    padding: 3.75rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'gfs neohellenic', serif;
+  }
+
+ h1 {
+    padding-top: 4rem;
+    font-family: 'playfair display', serif;
+    padding-left: 55rem;
+    font-size: 2.875rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+
+  hr{
+    margin-left: 34rem;
+    width: 50rem;
+  }
+  
+.game-content p {
+    font-family: 'gfs neohellenic', serif;
+    width: 17rem;
+    text-align: justify;
+    margin-left: 20rem;
+    font-size: 2rem;
+    color: #1c1c1c;
+    line-height: 1.6;
+    max-width: 25rem;
+}
+
+.game-content button {
+    width: 12.25rem;
+    height: 3.625rem;
+    margin-left: 20rem;
+    background: var(--dim-gray);
+    color: #ffffff;
+    border: 3px solid var(--normal-gray);
+    padding: .75rem 1.875rem;
+    font-size: 1.5rem;
+    border-radius: 1.9375rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    font-family: 'Inter', serif;
+    font-weight: bold;
+  }
+
+  .game-content button:hover {
+    background-color: #3b3a32;
+  }
+
+  .game-content img {
+    margin-right: 20rem;
+    width: 30,3125rem;
+    height: 23rem;
+    border-radius: 0.9375rem;
+    background: var(--cal-poly-green);
+    padding: .625rem;
+  }
+/* Pop-up invisível no início */
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  /* Classe que ativa o fade-in */
+  .popup.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Conteúdo do pop-up */
+  .popup-content {
+    background-color: var(--russet);
+    color: #fff9f0;
+    width: 100%;
+    max-width: 62.5rem;
+    height: 50rem;
+    margin: 13rem auto;
+    padding: 1.875rem 1.25rem;
+    border-radius: 1.25rem;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: 1.5rem;
+    right: 3.5rem;
+    font-size: 6rem;
+    color: #5C2D13;
+    cursor: pointer;
+  }
+  
+  /* Ícone */
+  .popup-icon img {
+    margin-top: 2rem;
+    width: 10rem;
+    font-size: 4.8rem;
+    margin-bottom: 2.1rem;
+  }
+  
+  /* Título */
+  .popup-content h2 {
+    font-family: 'playfair display', serif;
+    font-size: 2.6rem;
+    margin-bottom: 2.1rem;
+    font-weight: bold;
+  }
+  
+ /* Texto */
+ .popup-content p {
+  margin-left: 15.5rem;
+  font-family: 'gfs neohellenic', serif;
+  width: 29rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+  
+  /* Botão dentro do pop-up */
+  .cta-button {
+    font-family: 'Inter', serif;
+    background-color: #f1e9da;
+    color: var(--russet);
+    border: none;
+    padding: 1.2rem 2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
