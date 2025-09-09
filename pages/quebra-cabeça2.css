@@ -216,6 +216,7 @@ visibility: visible;
   }
   
   .harmonicas {
+    border: none;
   font-family: "Inter", sans-serif;
   color: var(--white);
   background: var(--cal-poly-green);
