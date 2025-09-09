@@ -22,7 +22,6 @@ for (var i = 0; i<4; i++){
   }
 }
 
-
 function iniciarTimer() {
   timerInterval = setInterval(() => {
     tempo++;
