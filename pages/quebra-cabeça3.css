@@ -230,6 +230,7 @@ transition: .4s;
 }
 
 .desarmonicas{    
+  border: none;
 font-family: "Inter", sans-serif;
 color: var(--white);
 background: var(--seal-brown);
