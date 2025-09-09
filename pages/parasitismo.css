@@ -9,6 +9,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 :root {
     --white: #fff;
     --bone: #E0D7C4; /*Background das páginas e opções header*/
@@ -82,9 +84,9 @@ body{
 }
 
 .container {
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
   }
   
   h1 {

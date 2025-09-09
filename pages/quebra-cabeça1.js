@@ -45,7 +45,7 @@ function clicarPeca(argElemento){
 }
 
 function embaralhar(argInteracoes) {
-  embaralhando = true; // Ativa flag para não contar movimentos
+  embaralhando = true; //Ativa flag para não contar movimentos
 
   for (var i = 0; i < argInteracoes; i++) {
     var escolhido1X = 0;

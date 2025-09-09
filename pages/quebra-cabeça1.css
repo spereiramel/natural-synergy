@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gfs neohellenic", serif;
+    font-family: "Inter", serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Libre Baskerville", serif;
+}
+
+:root { 
+    --white: #fff;
+    --bone: #E0D7C4; /*Background das páginas e opções do header*/
+    --timberwolf: #CCC7BB; /*Final das páginas com opção de escolha de harmônicas e jogo*/
+    --dim-gray: #716D5E; /*Botão Jogo*/
+    --khaki: #A9A38D;
+    --normal-gray: #BCB59D; /*Botão home*/
+    --field-drab: #5A4A25; 
+    --drab-dark-brown: #483B1E; /*Texto da escolha da categoria (Harmônicas/Desarmônicas) na page Oq são*/
+    --alabaster: #EAE8E1;  /*Botão Quero jogar, seção para escolher próximos tipos de relação*/
+    --seal-brown: #623014; /*Botão Quero jogar, opções desarmônicas, logo insta*/ 
+    --russet: #783B14; /*Bordas das imagens*/
+    --bistre: #282111;    /*Botão jogar novamente, título dos cards da home*/
+    --ash-green: #C8D0C3; /*Botão jogar novamente*/
+    --cal-poly-green: #364B2A; /*Opções harmônicas, cor do header*/
+    --dark-moss-green: #4F6839; /*Botão iniciar*/
+    --hunter-green: #3D5331; /*Bordas da imagem da page oq são*/
+}
+
+header {
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  background: var(--cal-poly-green);
+  width: 100%;
+
+
+  ul{
+      display: flex;
+      gap: 2.5rem;
+      padding-bottom: 0.5rem;
+  }
+
+   li {
+      list-style: none;
+  }
+
+  a {
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      color: var(--bone);
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: 1rem;
+  }
+
+  .logo {
+      justify-content: space-between;
+      display: flex;
+      width: 12.5rem;
+      margin-right: 52.8rem;
+      margin-left: 4.3rem;
+      padding-bottom: 0.9rem;
+      margin-top: 0.65rem;
+  }
+
+  nav li:hover {
+      transform: scale(1.1);
+      transition: .4s;
+  }
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bone);
+    font-family: 'gfs neohellenic', serif;
+}
+
+h1{
+  color: var(--cal-poly-green);
+  font-size: 3.2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2{
+  color: var(--dark-moss-green);
+  font-size: 2.2em;
+  margin-bottom: 2rem;
+}
+
+#grade{
+  height: 12rem;
+  width: 18rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+#grade div{
+  width: 3.125rem;
+  height: 3.125rem;
+  position: absolute;
+  background: url(../assets/escolha6.png);
+  background-size: 18.75rem 12.5rem;
+  transition: 0.25s ease-in-out;
+}
+
+#grade div:hover{
+  z-index: 10;
+  opacity: 0.7;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px var(--white);
+}
+
+
+
+.statusBar {
+  margin-bottom: 2rem;
+
+  span{
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--field-drab);
+  }
+}
+
+/* Pop-up invisível no início */
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Classe que ativa o fade-in */
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Conteúdo do pop-up */
+.popup-content {
+  background-color: var(--alabaster);
+  color: var(--khaki);
+  width: 100%;
+  max-width: 62.5rem;
+  height: 50rem;
+  margin: 13rem auto;
+  padding: 1.875rem 1.25rem;
+  border-radius: 1.25rem;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  text-align: center;
+  
+  h2{
+    margin-left: 25rem;
+    color: #282111;
+    font-family: 'playfair display', serif;
+    font-size: 2.6rem;
+    margin-bottom: 2.1rem;
+  }
+  }
+  
+  /* Ícone */
+  .popup-icon {
+  margin-left: 15rem;
+  margin-top: 3rem;
+  width: 30rem;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  }
+  
+  /* Texto */
+  .popup-content p {
+  margin-left: 15.5rem;
+  font-family: 'gfs neohellenic', serif;
+  width: 29rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  }
+  
+  /* Botão dentro do pop-up */
+  .cta-button {
+  margin-bottom: 7rem;  
+  font-family: 'Inter', sans-serif;
+  background-color: var(--ash-green);
+  color: var(--bistre);
+  border: none;
+  padding: 1.2rem 2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  }
+  
+  .cta-button:hover{
+    transform: scale(1.1);
+    transition: .4s;
+  }
+  
+  .popup-buttons {
+  justify-content: center;
+  gap: 2rem;
+  }
+  
+  .harmonicas {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  background: var(--cal-poly-green);
+  padding: 0.750rem;
+  border-radius: 3.1rem;
+  margin-right: 2rem;
+  font-weight: 800;
+  }
+  .harmonicas:hover{
+  transform: scale(1.1);
+  transition: .4s;
+  }
+  
+  .desarmonicas{    
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  background: var(--seal-brown);
+  text-decoration: none;
+  padding: 0.750rem;
+  border-radius: 3.1rem;
+  font-weight: 800;
+  }
+  .desarmonicas:hover{
+  transform: scale(1.1);
+  transition: .4s;
+  }
+  
