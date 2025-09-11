@@ -119,10 +119,10 @@ box-shadow: 0px 0px 3px 3px var(--white);
 
 /* Pop-up invisível no início */
 .popup {
+margin-top: -40rem;
 opacity: 0;
 visibility: hidden;
 transition: opacity 0.4s ease;
-position: fixed;
 top: 0;
 left: 0;
 width: 100%;
@@ -132,7 +132,7 @@ z-index: 999;
 }
 
 .statusBar {
-  margin-bottom: 2rem;
+  margin-bottom: -2rem;
 
   span{
     font-family: 'Inter', serif;
@@ -157,7 +157,6 @@ height: 50rem;
 margin: 13rem auto;
 padding: 1.875rem 1.25rem;
 border-radius: 1.25rem;
-position: relative;
 box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 text-align: center;
 
