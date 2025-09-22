@@ -94,20 +94,20 @@ margin-bottom: 2rem;
 }
 
 #grade{
-height: 12rem;
-width: 18rem;
-margin: 0 auto;
-position: relative;
+  width: 38vw;
+  position: relative;
+  margin-inline: auto;
 }
 
 #grade div{
-width: 3.125rem;
-height: 3.125rem;
-position: absolute;
-background: url(../assets/escolha4.png);
-background-size: 18.75rem 12.5rem;
-transition: 0.25s ease-in-out;
-}
+  width: 3.125rem;
+  height: 3.125rem;
+  position: absolute;
+  background: url(../assets/escolha4.png);
+  background-size: 18.75rem 12.5rem;
+  transition: 0.25s ease-in-out;
+  zoom: 2.5;
+  }
 
 #grade div:hover{
 z-index: 10;
