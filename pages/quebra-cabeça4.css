@@ -129,7 +129,7 @@ box-shadow: 0px 0px 3px 3px var(--white);
 
 /* Pop-up invisível no início */
 .popup {
-  margin-top: -40rem;
+  margin-top: -34rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease;
